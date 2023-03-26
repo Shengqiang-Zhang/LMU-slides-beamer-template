@@ -1,0 +1,81 @@
+% This LMU slides template is adapted from the beaver colortheme by Shengqiang Zhang.
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{bbding}
+\usepackage{array}
+\usepackage{tikz}
+\let\Tiny\tiny
+\beamertemplatenavigationsymbolsempty
+
+\usetheme{Madrid}
+% \usetheme{Darmstadt}
+% \usetheme{Rochester}
+% \usetheme{Frankfurt}
+% \usetheme{CambridgeUS}
+% \usetheme{default}
+% \usefonttheme{serif} %times new roman
+\definecolor{Green}{RGB}{43,134,75}
+\usecolortheme{lmugreen}
+\setbeamercolor{item projected}{bg=Green,fg=white}
+% \definecolor{UBCblue}{rgb}{0.04706, 0.13725, 0.26667} % UBC Blue (primary)
+
+% \usecolortheme[named=LMUGreen]{structure}
+
+\begin{document}
+\title[Place]{Title}
+\author[Shengqiang Zhang]{Shengqiang Zhang}
+\institute[LMU Munich]{
+    % \large
+    {\includegraphics[scale=0.032]{images/LMU_Muenchen_Logo.svg.png}} \\
+    Center for Information \& Language Processing (CIS), LMU Munich 
+}
+% \date{November 20, 2022}
+
+
+% \titlegraphic{
+%     \begin{tikzpicture}[remember picture,overlay]
+%     \node[anchor=south east, yshift=8pt, xshift=0pt] at (current page.south east)
+%     {\includegraphics[scale=0.032]{images/LMU_Muenchen_Logo.svg.png}};
+%     \end{tikzpicture}
+% }
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=8pt, xshift=7pt] at (current page.north east) {\includegraphics[scale=0.022]{images/LMU_Muenchen_Logo.svg.png}};
+\end{tikzpicture}
+\vspace{-10pt}
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\frame{\titlepage}
+
+
+\section{Introduction}
+
+\section{Conclusion}
+
+
+
+
+\begin{frame}
+    \Huge{\centerline{Thanks for your attention!}}
+    % \Huge{\centerline{Any Questions?}}
+    
+\end{frame}
+
+
+
+\bibliography{references}
+\bibliographystyle{acl_natbib}
+\end{document}
